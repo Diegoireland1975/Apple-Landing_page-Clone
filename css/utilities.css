@@ -1,0 +1,105 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.link {
+  color: #06c;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.link:hover {
+  opacity: 0.9;
+}
+
+.dark {
+  background: #000;
+  color: #fff;
+}
+/* Margin and Padding */
+.m1 {
+  margin: 1rem;
+}
+.m2 {
+  margin: 2rem;
+}
+.m3 {
+  margin: 3rem;
+}
+.m4 {
+  margin: 4rem;
+}
+.m5 {
+  margin: 5rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p1 {
+  padding: 1rem;
+}
+.p2 {
+  padding: 2rem;
+}
+.p3 {
+  padding: 3rem;
+}
+.p4 {
+  padding: 4rem;
+}
+.p5 {
+  padding: 5rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+.py-5 {
+  padding: 5rem 0;
+}
+
+/* typography */
+
+.lead {
+  font-size: 1.2rem;
+}
+
+.text-center {
+  text-align: center;
+}
