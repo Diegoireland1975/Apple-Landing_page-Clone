@@ -83,6 +83,10 @@ img {
   left: 50px; */
 }
 
+.main-nav .nav-links .nav-icon {
+  display: none;
+}
+
 .main-nav .nav-links.show {
   max-height: 100vh;
   opacity: 1;
@@ -102,7 +106,7 @@ img {
 }
 .main-nav .nav-links a:hover {
   color: #fff;
-  border-bottom: 2px solid #06c;
+  /* border-bottom: 1px solid #06c; */
 }
 
 /* Showcase */
@@ -111,20 +115,17 @@ img {
 .showcase {
   position: relative;
 }
-.showcase::after {
-  content: "";
-  background-color: red;
-}
+
 .showcase video {
-  width: 100%;
+  width: 100vw;
 
   z-index: 1;
 }
 
-.overlay h1 {
+.overlay h2 {
   color: #ccc;
   position: absolute;
-  top: 0;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
@@ -135,7 +136,7 @@ img {
 /* Section Main */
 .main {
   background: url(../img/showcase.jpg) no-repeat center center/cover;
-  background-color: #06c;
+  background-color: rgb(1, 51, 100);
   background-blend-mode: overlay;
   /* background-attachment: fixed; */
   color: #fff;
@@ -143,7 +144,7 @@ img {
   height: 100vh;
 }
 
-.main h2 {
+.main h1 {
   font-size: 2rem;
 }
 
@@ -186,8 +187,14 @@ img {
   background: rgb(236, 236, 236);
   padding: 0.5rem 0;
   margin: 1rem 0;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
+.apple-icons {
+  margin-top: 1rem;
+}
 .apple-icons img {
   width: 5rem;
   display: inline-block;
@@ -201,7 +208,6 @@ img {
   background: url(../img/apple.movies.jpg) no-repeat center center/cover;
   background-color: rgb(40, 102, 163);
   background-blend-mode: multiply;
-  z-index: 10;
 }
 
 .flex-links {
@@ -251,13 +257,18 @@ img {
     margin-right: auto;
   }
 
+  .main-nav .nav-links .nav-icon {
+    width: 1.2rem;
+    display: inline;
+  }
+
   /* Showcase */
 
-  .main h2 {
+  .main h1 {
     font-size: 3rem;
   }
 
-  .overlay h1 {
+  .overlay h2 {
     font-size: 4rem;
   }
 
