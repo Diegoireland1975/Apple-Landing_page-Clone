@@ -20,6 +20,7 @@
   color: #06c;
   display: inline-block;
   margin-right: 0.5rem;
+  font-size: 1.1rem;
 }
 .link:hover {
   opacity: 0.9;
