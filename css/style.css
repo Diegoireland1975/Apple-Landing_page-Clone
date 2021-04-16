@@ -16,7 +16,7 @@ body {
   font-family: "PT Sans", sans-serif;
   background: #eee;
   color: #000;
-  line-height: 1.6;
+  line-height: 1.4;
   overflow-x: hidden;
 }
 
@@ -170,7 +170,9 @@ img {
 
 .items h3 {
   color: #333;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 .items .dark h3 {
@@ -178,12 +180,38 @@ img {
 }
 
 .events,
-.ipad {
+.ipad,
+.movies,
+.apple-services {
   background: rgb(236, 236, 236);
   padding: 0.5rem 0;
   margin: 1rem 0;
 }
 
+.apple-icons img {
+  width: 5rem;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.items .movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../img/apple.movies.jpg) no-repeat center center/cover;
+  background-color: rgb(40, 102, 163);
+  background-blend-mode: multiply;
+  z-index: 10;
+}
+
+.flex-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-links a {
+  color: #fff;
+}
 /* ############# */
 /* MEDIA QUERIES */
 /* ############## */

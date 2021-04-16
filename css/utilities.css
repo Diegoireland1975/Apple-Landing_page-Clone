@@ -25,6 +25,14 @@
   opacity: 0.9;
 }
 
+.link::after {
+  content: "\276F";
+  margin-left: 0.5rem;
+  transition: 0.4s ease;
+}
+.link:hover::after {
+  opacity: 0.9;
+}
 .dark {
   background: #000;
   color: #fff;
