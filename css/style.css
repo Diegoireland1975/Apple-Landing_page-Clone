@@ -109,19 +109,6 @@ img {
   /* border-bottom: 1px solid #06c; */
 }
 
-/* Showcase */
-
-/* Video */
-.showcase {
-  position: relative;
-}
-
-.showcase video {
-  width: 100vw;
-
-  z-index: 1;
-}
-
 .overlay h2 {
   color: #ccc;
   position: absolute;
@@ -218,6 +205,65 @@ img {
 .flex-links a {
   color: #fff;
 }
+
+/* Footer */
+.main-footer {
+  background: #fff;
+  color: #333;
+  width: 100vw;
+  overflow: hidden;
+  font-size: 0.8rem;
+}
+.main-footer .close {
+  width: 0.5rem;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  transition: 0.4s ease;
+  display: initial;
+}
+
+.show .list-title > .close {
+  transform: rotate(0);
+}
+.main-footer .list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+  font-weight: 700;
+}
+
+.collapsible-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.show + .collapsible-content {
+  max-height: 100vh;
+  opacity: 1;
+  padding: 1rem 0;
+}
+
+.collapsible-content li {
+  margin-bottom: 1rem;
+}
+
+.collapsible-content .footer-links {
+  width: 100vw;
+  align-items: flex-start;
+}
+
+.main-footer .list-title a,
+.collapsible-content a {
+  color: #333;
+}
+
+.collapsible-content a:hover {
+  border-bottom: 1px solid #333;
+}
 /* ############# */
 /* MEDIA QUERIES */
 /* ############## */
@@ -285,5 +331,43 @@ img {
 
   .items h2 {
     font-size: 2rem;
+  }
+
+  /* Footer */
+  .main-footer {
+    overflow: visible;
+  }
+
+  .main-footer .close {
+    display: none;
+  }
+
+  .main-footer .list-title {
+    border-bottom: none;
+  }
+
+  .main-footer .list-title li {
+    white-space: nowrap;
+  }
+
+  .main-footer .container div {
+    position: relative;
+    top: 1rem;
+    float: left;
+    width: 250px;
+  }
+
+  .main-footer .container .collapsible-content {
+    max-height: 100vh;
+    opacity: 1;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-footer .container div {
+    float: left;
+    width: 150px;
+    margin: 0 1rem;
   }
 }
