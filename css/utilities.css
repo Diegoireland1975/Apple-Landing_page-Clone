@@ -17,7 +17,7 @@
   gap: 1rem;
 }
 .link {
-  color: #06c;
+  color: var(--link-color);
   display: inline-block;
   margin-right: 0.5rem;
   font-size: 1.1rem;
